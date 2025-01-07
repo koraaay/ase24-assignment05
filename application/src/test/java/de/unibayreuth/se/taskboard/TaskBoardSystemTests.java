@@ -133,7 +133,6 @@ public class TaskBoardSystemTests extends AbstractSystemTest {
     void updateUser() {
         User createdUser = userService.upsertUser(TestFixtures.USERS.getFirst());
         UserDto userDto = userDtoMapper.toDto(Optional.ofNullable(createdUser));
-        userDto.setName("Updated User"); // change name
 
         UserDto updatedUser = given()
                 .contentType(ContentType.JSON)

@@ -1,6 +1,8 @@
 package de.unibayreuth.se.taskboard.business.domain;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 

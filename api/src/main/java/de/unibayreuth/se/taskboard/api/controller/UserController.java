@@ -27,6 +27,7 @@ public class UserController {
     private final UserService userService;
     private final UserDtoMapper userDtoMapper;
 
+    // May be right dependent on mapper. The mapper may be able to handle the conversion.
     @GetMapping
     public List<UserDto> getAllUsers() {
             return userDtoMapper.toDtoList(userService.getAllUsers());

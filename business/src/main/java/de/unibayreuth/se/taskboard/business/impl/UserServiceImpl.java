@@ -16,6 +16,8 @@ import java.util.UUID;
 public class UserServiceImpl implements UserService {
     private final UserPersistenceService userPersistenceService;
 
+    // The upsert should throw the Exception!
+
     public UserServiceImpl(UserPersistenceService userPersistenceService) {
         this.userPersistenceService = userPersistenceService;
     }
